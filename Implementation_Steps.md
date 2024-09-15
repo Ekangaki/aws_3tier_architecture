@@ -53,7 +53,7 @@ CREATE TABLE IF NOT EXISTS transactions(
 );
 
 SHOW TABLES;
-INSERT INTO transactions (amount, description) VALUES ('400', 'groceries');
+INSERT INTO transactions (amount, description) VALUES ('400', 'africagroceries');
 SELECT * FROM transactions;
 ```
 
