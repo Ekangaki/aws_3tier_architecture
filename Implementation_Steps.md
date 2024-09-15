@@ -79,7 +79,7 @@ Download application code from S3 and start the application:
 
 ```bash
 cd ~/
-aws s3 cp s3://3tierproject-avinash/application-code/app-tier/ app-tier --recursive
+aws s3 cp s3://africa3tierproject-bucket/application-code/app-tier/ app-tier --recursive
 
 cd ~/app-tier
 npm install
