@@ -23,7 +23,11 @@ https://github.com/Ekangaki/aws_3tier_architecture.git
 On the app server, install MySQL:
 
 ```bash
-sudo yum install mysql -y
+$ sudo wget https://dev.mysql.com/get/mysql80-community-release-el9-1.noarch.rpm
+$ sudo dnf install mysql80-community-release-el9-1.noarch.rpm -y
+$ sudo rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2023
+$ sudo dnf install mysql-community-client -y
+$ sudo dnf install mysql-community-server -y
 ```
 
 ### Configure MySQL Database
@@ -31,7 +35,7 @@ sudo yum install mysql -y
 Connect to the database and perform basic configuration: Replace below info with your DB information
 
 ```bash
-mysql -h mydb.cfpgnjehw330.ap-south-1.rds.amazonaws.com -u admin -p
+mysql -h africa3tierprojectdb.cphulrovocta.us-east-1.rds.amazonaws.com -u admin -p
 ```
 
 In the MySQL shell, execute the following commands:
